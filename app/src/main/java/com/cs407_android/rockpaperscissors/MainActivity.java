@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.Button;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -13,6 +14,8 @@ import com.xgc1986.ripplebutton.widget.RippleButton;
 public class MainActivity extends AppCompatActivity {
 
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -32,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void playPressed(View view) {
         //TODO: Put to start game play activity
+        Intent playActivity = new Intent(this, PlayActivity.class);
+        startActivity(playActivity);
     }
 
     @Override
